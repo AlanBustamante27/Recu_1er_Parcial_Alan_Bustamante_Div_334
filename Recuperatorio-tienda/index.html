@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Parcial 1 - División 334</h1>
+    </header>
+
+    <main>
+
+        <section class="catalogo">
+
+            <!-- Encabezado de la tienda -->
+        <section class="encabezado-tienda">
+            <h1 id="titulo-tienda">Burger House</h1>
+
+            <span id="contador-carrito">
+                Carrito (0)
+            </span>
+        </section>
+
+
+            <!-- Barra horizontal -->
+            <nav>
+                <input type="button" value="Todas" data-categoria="Todas">
+    <input type="button" value="Clásicas" data-categoria="Clásicas">
+    <input type="button" value="Especiales" data-categoria="Especiales">
+    <input type="button" value="Combos" data-categoria="Combos">
+            </nav>
+
+            <!-- Buscador y ordenamiento -->
+            <section class="filtros">
+
+                <input
+                    type="text"
+                    placeholder="Buscar..."
+                    class="barra-busqueda"
+                >
+
+                <select id="ordenar-precio">
+                    <option value="">Ordenar por precio</option>
+                    <option value="menor">Menor precio</option>
+                    <option value="mayor">Mayor precio</option>
+                </select>
+
+            </section>
+
+            <!-- Productos -->
+            <section id="products-container">
+
+            </section>
+        </section>
+
+        <!-- Carrito -->
+        <aside>
+            <h2>Mi carrito</h2>
+
+            <button id="vaciar-carrito">
+                VACIAR CARRITO
+            </button>
+
+            <ul id="cart-list"></ul>
+
+            <p id="cart-total"></p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Alan Nahuel Bustamante</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
